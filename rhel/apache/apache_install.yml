@@ -1,6 +1,7 @@
 ---
 - name: Apache server installed
   hosts: web
+  become: ec2-user
 
   tasks:
   - name: latest Apache version installed
